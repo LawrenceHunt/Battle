@@ -10,8 +10,7 @@ feature 'Attacking player and getting confirmation' do
 
   scenario 'attack removes 10HP off player 2' do
     sign_in_and_play
-    click_button 'Attack'
-    click_button 'OK'
+    attack_and_confirm
     expect(page).not_to have_content 'Lawrence:60HP'
     expect(page).to have_content 'Lawrence:50HP'
   end

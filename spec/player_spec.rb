@@ -15,10 +15,10 @@ describe Player do
   end
 
 
-describe '#receive_damage' do
-  it 'is able to receive damage' do
-  expect{player_1.receive_damage}.to change{subject.hit_points}.by (-10)
+  describe '#receive_damage' do
+    it 'is able to receive damage' do
+    expect{player_1.receive_damage}.to change{subject.hit_points}.by (-10)
+    end
   end
-end
 
-end
+  end
